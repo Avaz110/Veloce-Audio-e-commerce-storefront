@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VELOCE AUDIO // Precision Industrial Sound Engineering</title>
+  <meta name="description" content="Minimalist high-fidelity audio equipment and charging systems engineered with technological industrial purity. Featuring custom beryllium drivers, lossless wireless codecs, and transparent mechanics.">
+  <meta name="keywords" content="Veloce Audio, industrial design headphones, minimalist earbuds, beryllium audio, high fidelity sound, wireless ANC, GaN charger">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔴</text></svg>">
+
+  <!-- Google Fonts: Space Grotesk & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons 1.11.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-tech-grid">
+
+  <!-- =========================================================================
+       1. NAVIGATION & TOP HEADER
+       ========================================================================= -->
+  <header class="fixed-top">
+    <!-- Announcement Tech Bar -->
+    <div class="bg-dark text-white py-1 px-3 d-none d-md-block border-bottom border-secondary border-opacity-25">
+      <div class="container d-flex justify-content-between align-items-center font-mono small">
+        <div class="d-flex align-items-center gap-3">
+          <span><span class="tech-dot pulse me-2"></span>VELOCE AUDIO LAB // SYSTEM PROTOCOL VER 4.2</span>
+          <span class="text-secondary">|</span>
+          <span class="text-white-50">USE CODE <strong class="text-white">VELOCE15</strong> FOR 15% OFF ALL HARDWARE</span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <span class="text-white-50"><i class="bi bi-truck me-1"></i> FREE EXPRESS SHIPPING OVER $150</span>
+          <span class="text-secondary">|</span>
+          <span class="text-white-50">GLOBAL WAREHOUSE: STOCKHOLM &amp; TOKYO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar navbar-expand-lg veloce-navbar">
+      <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand-logo" href="#top">
+          <span class="brand-badge">V-01</span>
+          <span>VELOCE<span class="text-accent-red">.</span>AUDIO</span>
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#veloceNav" aria-controls="veloceNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-3 text-dark"></i>
+        </button>
+
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse justify-content-center" id="veloceNav">
+          <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-1">
+            <li class="nav-item">
+              <a class="nav-link nav-link-tech" href="#flagship">Flagship</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-tech" href="#catalog">Hardware Catalog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-tech" href="#specs">Specifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-tech" href="#faq">Engineering &amp; Support</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Action Items -->
+        <div class="d-flex align-items-center gap-2">
+          <!-- Slide-out Cart Trigger Button -->
+          <button type="button" class="cart-trigger-btn" data-bs-toggle="offcanvas" data-bs-target="#veloceCartOffcanvas" aria-controls="veloceCartOffcanvas">
+            <i class="bi bi-bag"></i>
+            <span>Cart</span>
+            <span class="cart-counter-badge" id="cartCounterBadge">0</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Space filler for fixed header -->
+  <div style="height: 90px;" id="top"></div>
+
+  <main>
+    <!-- =========================================================================
+         2. HERO & FLAGSHIP PRODUCT SHOWCASE
+         ========================================================================= -->
+    <section class="hero-flagship-section" id="flagship">
+      <div class="container">
+        
+        <div class="flagship-card tech-corner-frame">
+          <div class="row g-5 align-items-center">
+            
+            <!-- Left Column: Product Information & Color Switcher -->
+            <div class="col-lg-6">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <span class="tech-tag tech-tag-red">FLAGSHIP RELEASE</span>
+                <span class="tech-tag" id="flagshipCode">REF. VOL-01-BLK</span>
+              </div>
+
+              <h1 class="display-4 font-heading fw-bold text-uppercase mb-2" id="flagshipTitle">
+                Veloce One // Matte Black
+              </h1>
+
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <span class="font-mono text-muted small" id="flagshipFinish">FINISH: OBSIDIAN ANODIZED</span>
+                <span class="text-secondary">&bull;</span>
+                <span class="font-mono text-accent-red small fw-bold">IN STOCK</span>
+              </div>
+
+              <p class="fs-6 text-muted mb-4" id="flagshipDesc">
+                Stealth obsidian finish with micro-etched titanium headband and acoustic memory foam cups. Engineered for subterranean lows and crystalline highs.
+              </p>
+
+              <!-- Colorway Switcher Controls -->
+              <div class="p-3 bg-concrete border border-tech-dark rounded mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="spec-pill-label">SELECT FINISH COLORWAY:</span>
+                  <span class="font-mono fw-bold small text-dark" id="flagshipColorName">Matte Black</span>
+                </div>
+                
+                <div class="color-swatch-group">
+                  <!-- Matte Black -->
+                  <button type="button" class="color-swatch-btn active" data-color="matte-black" aria-label="Select Matte Black Colorway" title="Matte Black">
+                    <span class="swatch-circle"></span>
+                  </button>
+                  <!-- Pure White -->
+                  <button type="button" class="color-swatch-btn" data-color="pure-white" aria-label="Select Pure White Colorway" title="Pure White">
+                    <span class="swatch-circle"></span>
+                  </button>
+                  <!-- Industrial Silver -->
+                  <button type="button" class="color-swatch-btn" data-color="industrial-silver" aria-label="Select Industrial Silver Colorway" title="Industrial Silver">
+                    <span class="swatch-circle"></span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Price & CTA Actions -->
+              <div class="d-flex flex-wrap align-items-center gap-3 pt-2">
+                <div class="me-2">
+                  <span class="spec-pill-label d-block mb-0">DIRECT PRICE</span>
+                  <span class="display-6 font-heading fw-bold text-dark" id="flagshipPrice">$349</span>
+                </div>
+                
+                <button type="button" class="btn btn-veloce btn-veloce-red py-3 px-4 flex-grow-1" id="btnAddFlagship">
+                  <i class="bi bi-bag-plus-fill"></i> Add to Cart &bull; Express Dispatch
+                </button>
+                <a href="#specs" class="btn btn-veloce-outline py-3 px-3">
+                  <i class="bi bi-cpu"></i> Full Specs
+                </a>
+              </div>
+
+              <!-- Micro reassurance -->
+              <div class="d-flex flex-wrap gap-4 mt-4 pt-3 border-top border-tech text-muted font-mono small">
+                <span><i class="bi bi-shield-check text-accent-red me-1"></i> 2-Year Hardware Warranty</span>
+                <span><i class="bi bi-arrow-repeat text-accent-red me-1"></i> 30-Day Risk-Free Trial</span>
+                <span><i class="bi bi-lightning-charge text-accent-red me-1"></i> Ships in 24h</span>
+              </div>
+            </div>
+
+            <!-- Right Column: Interactive Visual Display Stage -->
+            <div class="col-lg-6">
+              <div class="flagship-image-wrapper tech-corner-frame">
+                <span class="flagship-watermark">ARCH-REF // 01</span>
+                
+                <!-- Centerpiece Product Render -->
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80" alt="Veloce One Wireless ANC Headphones" class="flagship-product-img" id="flagshipImg">
+                
+                <!-- Floating Technical HUD Badges -->
+                <div class="position-absolute bottom-0 start-0 m-3 d-none d-sm-block">
+                  <span class="tech-tag tech-tag-dark">
+                    <i class="bi bi-soundwave text-accent-red me-1"></i> 40MM BERYLLIUM
+                  </span>
+                </div>
+                <div class="position-absolute bottom-0 end-0 m-3 d-none d-sm-block">
+                  <span class="tech-tag tech-tag-dark">
+                    <i class="bi bi-battery-charging text-accent-red me-1"></i> 55H RUNTIME
+                  </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Specs Strip -->
+          <div class="row mt-5 pt-4 border-top border-tech">
+            <div class="col-12">
+              <div class="specs-pill-strip">
+                <div class="spec-pill-item">
+                  <span class="spec-pill-label">ACOUSTIC DRIVER</span>
+                  <span class="spec-pill-val">40mm Pure Beryllium</span>
+                </div>
+                <div class="spec-pill-item">
+                  <span class="spec-pill-label">NOISE CANCELLATION</span>
+                  <span class="spec-pill-val">48dB Hybrid Multi-Mic</span>
+                </div>
+                <div class="spec-pill-item">
+                  <span class="spec-pill-label">TOTAL BATTERY</span>
+                  <span class="spec-pill-val">55 Hours (Fast Charge)</span>
+                </div>
+                <div class="spec-pill-item">
+                  <span class="spec-pill-label">WIRELESS CODECS</span>
+                  <span class="spec-pill-val">LDAC, aptX HD, AAC</span>
+                </div>
+                <div class="spec-pill-item">
+                  <span class="spec-pill-label">LATENCY</span>
+                  <span class="spec-pill-val">25ms Ultra-Low Sync</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. PRODUCT CATALOG WITH FILTERS & SORTING
+         ========================================================================= -->
+    <section class="catalog-section" id="catalog">
+      <div class="container">
+        
+        <!-- Section Title Header -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="tech-dot"></span>
+              <span class="spec-pill-label text-dark fw-bold mb-0">CATALOG MANIFEST // 2026 LINEUP</span>
+            </div>
+            <h2 class="display-6 font-heading fw-bold text-uppercase mb-0">
+              PRECISION AUDIO &amp; INDUSTRIAL POWER
+            </h2>
+          </div>
+          <span class="font-mono text-muted small mt-2 mt-md-0" id="productCountDisplay">
+            SHOWING 9 OF 9 ITEMS
+          </span>
+        </div>
+
+        <!-- Filter & Sort Bar -->
+        <div class="filter-bar-wrapper d-flex justify-content-between align-items-center">
+          <!-- Category Filter Buttons -->
+          <div class="d-flex align-items-center gap-1 filter-scroll-group">
+            <button type="button" class="filter-btn active" data-filter="all">All Hardware</button>
+            <button type="button" class="filter-btn" data-filter="headphones">Headphones &amp; Buds</button>
+            <button type="button" class="filter-btn" data-filter="speakers">Portable Speakers</button>
+            <button type="button" class="filter-btn" data-filter="power">Power &amp; Docks</button>
+            <button type="button" class="filter-btn" data-filter="accessories">Cables &amp; Gear</button>
+          </div>
+
+          <!-- Sort Select Dropdown -->
+          <div class="d-flex align-items-center gap-2">
+            <label for="sortSelect" class="spec-pill-label d-none d-sm-inline mb-0">SORT BY:</label>
+            <select class="custom-select-tech" id="sortSelect">
+              <option value="featured">Featured Hardware</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Acoustic Rating</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Dynamic Product Grid Rendered by JS -->
+        <div class="row g-4" id="productGrid">
+          <!-- Populated by main.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. TECH SPECS COMPARISON MATRIX
+         ========================================================================= -->
+    <section class="specs-section" id="specs">
+      <div class="container">
+        
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <div class="d-inline-flex align-items-center gap-2 mb-2">
+            <span class="tech-tag tech-tag-dark">ARCHITECTURAL BENCHMARKS</span>
+          </div>
+          <h2 class="display-6 font-heading fw-bold text-uppercase mb-3">
+            TECHNICAL MATRIX COMPARISON
+          </h2>
+          <p class="text-muted">
+            Direct acoustic and structural telemetry comparing Veloce hardware tiers. Choose the instrument tuned to your listening discipline.
+          </p>
+        </div>
+
+        <!-- Comparison Table -->
+        <div class="specs-table-container shadow-sm">
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th style="width: 28%;">SPECIFICATION</th>
+                <th style="width: 24%;" class="spec-highlight-cell text-center">
+                  <span class="tech-tag tech-tag-red d-inline-block mb-1">FLAGSHIP</span>
+                  <div class="fs-6 font-heading">Veloce One (Over-Ear)</div>
+                </th>
+                <th style="width: 24%;" class="text-center">
+                  <span class="tech-tag tech-tag-dark d-inline-block mb-1">COMPACT</span>
+                  <div class="fs-6 font-heading">Veloce Neo (In-Ear)</div>
+                </th>
+                <th style="width: 24%;" class="text-center">
+                  <span class="tech-tag d-inline-block mb-1">STUDIO</span>
+                  <div class="fs-6 font-heading">Veloce Core (Open-Back)</div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="spec-category-label">Acoustic Transducer</td>
+                <td class="spec-highlight-cell text-center font-mono fw-bold">40mm Pure Beryllium</td>
+                <td class="text-center font-mono">11.6mm Graphene Polymer</td>
+                <td class="text-center font-mono">50mm Planar Magnetic</td>
+              </tr>
+              <tr>
+                <td class="spec-category-label">Active Noise Cancellation</td>
+                <td class="spec-highlight-cell text-center font-mono fw-bold">48dB Hybrid Multi-Mic</td>
+                <td class="text-center font-mono">42dB Smart Adaptive ANC</td>
+                <td class="text-center font-mono text-muted">Acoustic Open-Back (None)</td>
+              </tr>
+              <tr>
+                <td class="spec-category-label">Frequency Response</td>
+                <td class="spec-highlight-cell text-center font-mono">10Hz &ndash; 45,000Hz</td>
+                <td class="text-center font-mono">20Hz &ndash; 24,000Hz</td>
+                <td class="text-center font-mono fw-bold">5Hz &ndash; 50,000Hz</td>
+              </tr>
+              <tr>
+                <td class="spec-category-label">Battery Playback</td>
+                <td class="spec-highlight-cell text-center font-mono fw-bold">55 Hours (ANC Off)</td>
+                <td class="text-center font-mono">36 Hours (With Pod)</td>
+                <td class="text-center font-mono text-muted">Passive Wired Only</td>
+              </tr>
+              <tr>
+                <td class="spec-category-label">Wireless Connectivity</td>
+                <td class="spec-highlight-cell text-center font-mono">Bluetooth 5.4 + LDAC / aptX HD</td>
+                <td class="text-center font-mono">Bluetooth 5.3 + AAC / LHDC</td>
+                <td class="text-center font-mono">OFC Silver 3.5mm / 6.3mm</td>
+              </tr>
+              <tr>
+                <td class="spec-category-label">Ingress Protection</td>
+                <td class="spec-highlight-cell text-center font-mono">IP54 Dust &amp; Splash</td>
+                <td class="text-center font-mono fw-bold">IP55 Water &amp; Sweatproof</td>
+                <td class="text-center font-mono text-muted">Studio Environment</td>
+              </tr>
+              <tr>
+                <td class="spec-category-label">Structural Net Weight</td>
+                <td class="spec-highlight-cell text-center font-mono">248 grams</td>
+                <td class="text-center font-mono fw-bold">4.8 grams (per bud)</td>
+                <td class="text-center font-mono">310 grams</td>
+              </tr>
+              <tr>
+                <td class="spec-category-label">Direct Investment</td>
+                <td class="spec-highlight-cell text-center font-heading fs-5 fw-bold text-accent-red">$349</td>
+                <td class="text-center font-heading fs-5 fw-bold">$189</td>
+                <td class="text-center font-heading fs-5 fw-bold">$299</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. TECH FAQ ACCORDION
+         ========================================================================= -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            
+            <div class="text-center mb-5">
+              <div class="d-inline-flex align-items-center gap-2 mb-2">
+                <span class="tech-tag tech-tag-dark">SUPPORT &amp; POLICIES</span>
+              </div>
+              <h2 class="display-6 font-heading fw-bold text-uppercase mb-3">
+                FREQUENTLY ANSWERED QUESTIONS
+              </h2>
+              <p class="text-muted">
+                Detailed protocols regarding shipping times, international customs, warranty coverage, and companion software.
+              </p>
+            </div>
+
+            <div class="accordion veloce-accordion" id="veloceFaqAccordion">
+              
+              <!-- Question 1 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    What is the international delivery timeframe and customs policy?
+                  </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#veloceFaqAccordion">
+                  <div class="accordion-body">
+                    We ship globally via carbon-neutral DHL Express and FedEx International Priority from our logistics hubs in Stockholm and Tokyo. Orders over $150 qualify for free express shipping. Most destinations in North America, Europe, and Asia-Pacific receive deliveries within 3 to 5 business days with full real-time tracking. All import duties are prepaid at checkout for over 65 countries.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 2 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How does the 30-day risk-free in-home trial work?
+                  </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#veloceFaqAccordion">
+                  <div class="accordion-body">
+                    True acoustic performance must be evaluated in your personal listening space with your preferred music library. We provide a 30-day trial period from the date of package delivery. If you are not completely captivated by the sound signature, simply request a prepaid return label via our portal for a 100% full refund with zero restocking fees.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 3 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What hardware warranty coverage is included?
+                  </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#veloceFaqAccordion">
+                  <div class="accordion-body">
+                    Every Veloce Audio product includes a comprehensive 2-year manufacturer warranty against hardware defects, driver degradation, battery wear, and mechanical failure. We also maintain a commitment to modularity: replacement magnetic memory foam ear pads, cables, and structural bands can be purchased individually for long-term product longevity.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 4 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Is there a companion app for EQ adjustments and firmware?
+                  </button>
+                </h3>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#veloceFaqAccordion">
+                  <div class="accordion-body">
+                    Yes. The official Veloce Audio Control app is available on iOS and Android. It features a parametric 8-band equalizer with studio presets curated by acoustic engineers, multi-point Bluetooth management, transparency mode adjustment, battery telemetry, and zero-latency over-the-air firmware updates.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 5 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    What high-resolution codecs are supported on Veloce One?
+                  </button>
+                </h3>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#veloceFaqAccordion">
+                  <div class="accordion-body">
+                    Veloce One features dual high-performance Qualcomm and Sony Bluetooth chipsets supporting LDAC (up to 990 kbps at 24-bit/96kHz), aptX HD, aptX Adaptive, AAC for Apple devices, and standard SBC. For pure uncompressed lossless audio, an analog 3.5mm / 6.3mm audiophile cable and a USB-C lossless audio input mode are included in the packaging.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 6 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    How do I apply the 15% discount code VELOCE15?
+                  </button>
+                </h3>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#veloceFaqAccordion">
+                  <div class="accordion-body">
+                    Simply add any hardware product to your cart, click the Cart button in the top right to open the slide-out manifest, enter <strong>VELOCE15</strong> in the promo code field, and click Apply. A 15% deduction will immediately reflect in your order total.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       6. SLIDE-OUT SHOPPING CART (BOOTSTRAP OFFCANVAS)
+       ========================================================================= -->
+  <div class="offcanvas offcanvas-end veloce-offcanvas-cart" tabindex="-1" id="veloceCartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+    <!-- Cart Header -->
+    <div class="cart-header d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-2">
+        <span class="tech-dot"></span>
+        <h3 class="font-heading fs-5 mb-0 fw-bold" id="cartOffcanvasLabel">CART // MANIFEST</h3>
+      </div>
+      <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <!-- Free Shipping Progress Meter -->
+    <div class="px-4 pt-3">
+      <div class="shipping-meter-box">
+        <div class="d-flex justify-content-between font-mono small" id="shippingMeterText">
+          <span>Free shipping over $150</span>
+          <span>$150.00 GOAL</span>
+        </div>
+        <div class="shipping-progress-track">
+          <div class="shipping-progress-bar" id="shippingProgressBar" style="width: 0%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Body: Items List -->
+    <div class="cart-body-scroll">
+      <!-- Empty Cart State -->
+      <div class="cart-empty-view d-none" id="cartEmptyNotice">
+        <div class="cart-empty-icon">
+          <i class="bi bi-box-seam"></i>
+        </div>
+        <h4 class="font-heading mb-2">Cart is empty</h4>
+        <p class="text-muted small mb-4">No acoustic devices or accessories currently queued in your order manifest.</p>
+        <button type="button" class="btn btn-veloce btn-veloce-sm" data-bs-dismiss="offcanvas">
+          Discover Hardware
+        </button>
+      </div>
+
+      <!-- Filled Cart Items List -->
+      <div id="cartItemsList">
+        <!-- Rendered by main.js -->
+      </div>
+    </div>
+
+    <!-- Cart Footer: Promo Code & Price Breakdown -->
+    <div class="cart-footer" id="cartFilledControls">
+      <!-- Promo Code Section -->
+      <div class="promo-form-wrapper">
+        <div class="d-flex justify-content-between align-items-center mb-1">
+          <span class="spec-pill-label mb-0">PROMO CODE (TRY: VELOCE15)</span>
+          <span id="promoFeedback"></span>
+        </div>
+        <form id="cartPromoForm" class="promo-input-group">
+          <input type="text" class="promo-input" id="cartPromoInput" placeholder="ENTER CODE..." maxlength="15" autocomplete="off">
+          <button type="submit" class="btn btn-veloce btn-veloce-sm px-3">Apply</button>
+        </form>
+        <div id="appliedPromoCodeBadge" class="badge bg-dark text-white font-mono mt-2 d-none py-1 px-2"></div>
+      </div>
+
+      <!-- Financial Totals -->
+      <div class="py-2 border-top border-tech mb-3 font-mono">
+        <div class="d-flex justify-content-between mb-1 small text-muted">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">$0.00</span>
+        </div>
+        <div class="d-flex justify-content-between mb-1 small text-accent-red fw-bold d-none" id="cartDiscountRow">
+          <span>Discount (15% Off)</span>
+          <span id="cartDiscount">-$0.00</span>
+        </div>
+        <div class="d-flex justify-content-between mb-1 small text-muted">
+          <span>Worldwide Shipping</span>
+          <span id="cartShipping">FREE</span>
+        </div>
+        <div class="d-flex justify-content-between pt-2 border-top border-tech fw-bold fs-5 text-dark">
+          <span class="font-heading">ESTIMATED TOTAL</span>
+          <span id="cartTotal">$0.00</span>
+        </div>
+      </div>
+
+      <!-- Checkout Button -->
+      <button type="button" class="btn btn-veloce btn-veloce-red w-100 py-3 font-heading" id="btnOpenCheckout">
+        <i class="bi bi-shield-lock me-1"></i> Proceed to Checkout
+      </button>
+      <div class="text-center font-mono text-muted small mt-2">
+        <i class="bi bi-lock me-1"></i> 256-Bit Encrypted Architecture
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       7. SIMULATED CHECKOUT MODAL
+       ========================================================================= -->
+  <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border border-tech-dark rounded-1">
+        
+        <!-- View 1: Checkout Form -->
+        <div id="checkoutFormView">
+          <div class="modal-header bg-concrete border-bottom border-tech">
+            <div class="d-flex align-items-center gap-2">
+              <span class="tech-dot"></span>
+              <h4 class="modal-title font-heading fs-5 fw-bold" id="checkoutModalLabel">CHECKOUT PROTOCOL // DISPATCH DETAILS</h4>
+            </div>
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body p-4">
+            <div class="row g-4">
+              <!-- Shipping Details Form -->
+              <div class="col-lg-7">
+                <h5 class="font-heading fs-6 fw-bold text-uppercase mb-3">1. Destination Telemetry</h5>
+                <form id="checkoutForm" novalidate>
+                  <div class="row g-2 mb-3">
+                    <div class="col-sm-6">
+                      <label class="spec-pill-label mb-1">FIRST NAME *</label>
+                      <input type="text" class="form-control rounded-1 font-mono small" placeholder="Julian" required value="Alexander">
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="spec-pill-label mb-1">LAST NAME *</label>
+                      <input type="text" class="form-control rounded-1 font-mono small" placeholder="Vance" required value="Wright">
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="spec-pill-label mb-1">EMAIL FOR DISPATCH TELEMETRY *</label>
+                    <input type="email" class="form-control rounded-1 font-mono small" placeholder="name@domain.com" required value="wright.sound@audio.com">
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="spec-pill-label mb-1">STREET ADDRESS *</label>
+                    <input type="text" class="form-control rounded-1 font-mono small" placeholder="Acoustics Blvd 402" required value="84 Industrial Way, Suite 4B">
+                  </div>
+
+                  <div class="row g-2 mb-3">
+                    <div class="col-sm-6">
+                      <label class="spec-pill-label mb-1">CITY *</label>
+                      <input type="text" class="form-control rounded-1 font-mono small" placeholder="Stockholm" required value="Stockholm">
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="spec-pill-label mb-1">POSTAL / ZIP CODE *</label>
+                      <input type="text" class="form-control rounded-1 font-mono small" placeholder="112 50" required value="112 50">
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="spec-pill-label mb-1">COUNTRY / TERRITORY *</label>
+                    <select class="form-select rounded-1 font-mono small">
+                      <option value="SWE" selected>Sweden (Stockholm Hub)</option>
+                      <option value="USA">United States</option>
+                      <option value="DEU">Germany</option>
+                      <option value="JPN">Japan (Tokyo Hub)</option>
+                      <option value="GBR">United Kingdom</option>
+                      <option value="KGZ">Kyrgyzstan</option>
+                    </select>
+                  </div>
+
+                  <h5 class="font-heading fs-6 fw-bold text-uppercase mb-3">2. Payment Protocol</h5>
+                  <div class="d-flex gap-2 mb-4">
+                    <div class="form-check p-3 border border-dark rounded-1 flex-grow-1 bg-concrete">
+                      <input class="form-check-input" type="radio" name="paymentOption" id="payApple" checked>
+                      <label class="form-check-label font-mono small fw-bold ms-1" for="payApple">
+                        <i class="bi bi-apple me-1"></i> Apple Pay / GPay
+                      </label>
+                    </div>
+                    <div class="form-check p-3 border border-tech-dark rounded-1 flex-grow-1">
+                      <input class="form-check-input" type="radio" name="paymentOption" id="payCard">
+                      <label class="form-check-label font-mono small fw-bold ms-1" for="payCard">
+                        <i class="bi bi-credit-card me-1"></i> Credit Card
+                      </label>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-veloce btn-veloce-red w-100 py-3 font-heading">
+                    <i class="bi bi-check2-circle me-1"></i> Authorize &amp; Confirm Order
+                  </button>
+                </form>
+              </div>
+
+              <!-- Order Summary Sidebar -->
+              <div class="col-lg-5">
+                <div class="p-3 bg-concrete border border-tech-dark rounded-1">
+                  <h6 class="font-heading fs-6 fw-bold text-uppercase mb-3">Order Telemetry</h6>
+                  <div id="checkoutSummaryList" class="mb-3">
+                    <!-- Populated by JS -->
+                  </div>
+                  <div class="pt-3 border-top border-dark d-flex justify-content-between align-items-center">
+                    <span class="font-heading fw-bold">FINAL SUM</span>
+                    <span class="font-heading fs-4 fw-bold text-accent-red" id="checkoutModalTotal">$0.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- View 2: Order Confirmation Screen -->
+        <div id="checkoutSuccessView" class="p-5 text-center d-none">
+          <div class="mb-4">
+            <span class="tech-tag tech-tag-red fs-6 py-2 px-3">
+              <i class="bi bi-check-lg me-1"></i> ORDER MANIFEST AUTHORIZED
+            </span>
+          </div>
+
+          <h3 class="display-6 font-heading fw-bold text-uppercase mb-2">
+            TELEMETRY CONFIRMED
+          </h3>
+          <p class="text-muted mb-4 max-w-500 mx-auto">
+            Your Veloce acoustic hardware has entered our automated calibration queue. A dispatch manifest with tracking has been sent to your registered terminal.
+          </p>
+
+          <div class="p-3 bg-concrete border border-tech-dark rounded-1 max-w-400 mx-auto mb-4 font-mono text-start small">
+            <div class="d-flex justify-content-between py-1 border-bottom border-tech">
+              <span class="text-muted">ORDER ID:</span>
+              <strong class="text-dark" id="orderRefDisplay">VEL-8941-X</strong>
+            </div>
+            <div class="d-flex justify-content-between py-1 border-bottom border-tech">
+              <span class="text-muted">ESTIMATED DISPATCH:</span>
+              <strong class="text-dark">Within 24 Hours</strong>
+            </div>
+            <div class="d-flex justify-content-between py-1">
+              <span class="text-muted">COURIER:</span>
+              <strong class="text-accent-red">DHL Express Worldwide</strong>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-veloce py-2 px-4" data-bs-dismiss="modal">
+            Return to Audio Lab
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       8. FOOTER & NEWSLETTER
+       ========================================================================= -->
+  <footer class="veloce-footer">
+    <div class="container">
+      
+      <!-- Top Row: Bio & Newsletter -->
+      <div class="row g-5 pb-5 border-bottom border-secondary border-opacity-25">
+        <div class="col-lg-5">
+          <a class="navbar-brand-logo text-white mb-3" href="#top">
+            <span class="brand-badge">V-01</span>
+            <span>VELOCE<span class="text-accent-red">.</span>AUDIO</span>
+          </a>
+          <p class="text-secondary small max-w-400 mb-4">
+            Engineered in Stockholm &amp; Tokyo. We pursue acoustic purity through technological industrial minimalism: honest materials, exposed functional transparency, and uncompromising transducer performance.
+          </p>
+          <div class="d-flex align-items-center gap-2">
+            <span class="tech-dot"></span>
+            <span class="font-mono small text-secondary">STOCKHOLM // TOKYO // BERLIN // KYRGYZSTAN LAB</span>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="p-4 bg-dark-secondary rounded-1 border border-secondary border-opacity-25">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="tech-tag tech-tag-red">TRANSMISSION FEED</span>
+              <span class="font-mono small text-secondary">BE THE FIRST FOR ACOUSTIC HARDWARE DROPS</span>
+            </div>
+            <h4 class="font-heading text-white fs-5 fw-bold mb-3">
+              JOIN THE VELOCE ACOUSTIC DISPATCH
+            </h4>
+            <form id="newsletterForm" class="newsletter-input-group">
+              <input type="email" class="newsletter-input" placeholder="ENTER TERMINAL EMAIL..." required>
+              <button type="submit" class="btn btn-veloce btn-veloce-red px-4 font-mono">
+                SUBSCRIBE
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Links Grid -->
+      <div class="row g-4 py-5 border-bottom border-secondary border-opacity-25">
+        <div class="col-6 col-md-3">
+          <h6 class="footer-heading">HARDWARE</h6>
+          <ul class="list-unstyled mb-0 d-flex flex-column gap-2 footer-link-item">
+            <li><a href="#flagship">Veloce One Over-Ear</a></li>
+            <li><a href="#catalog">Veloce Neo In-Ear</a></li>
+            <li><a href="#catalog">Veloce Core Planar</a></li>
+            <li><a href="#catalog">Monolith 360° Speaker</a></li>
+            <li><a href="#catalog">MagDock 3-in-1 Station</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h6 class="footer-heading">ENGINEERING</h6>
+          <ul class="list-unstyled mb-0 d-flex flex-column gap-2 footer-link-item">
+            <li><a href="#specs">Acoustic Driver Matrix</a></li>
+            <li><a href="#specs">Hybrid ANC Protocols</a></li>
+            <li><a href="#specs">LDAC Lossless Telemetry</a></li>
+            <li><a href="#specs">GaN Fast-Charge System</a></li>
+            <li><a href="#faq">Veloce Companion App</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h6 class="footer-heading">SUPPORT &amp; POLICIES</h6>
+          <ul class="list-unstyled mb-0 d-flex flex-column gap-2 footer-link-item">
+            <li><a href="#faq">30-Day Risk-Free Trial</a></li>
+            <li><a href="#faq">2-Year Global Warranty</a></li>
+            <li><a href="#faq">DHL Express Dispatch</a></li>
+            <li><a href="#faq">Replacement Parts</a></li>
+            <li><a href="#faq">Firmware Patch Notes</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h6 class="footer-heading">TELEMETRY &amp; SOCIAL</h6>
+          <div class="d-flex gap-2 mb-3">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="btn-icon-tech" title="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="btn-icon-tech" title="X / Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="btn-icon-tech" title="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener" class="btn-icon-tech" title="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+          <div class="font-mono small text-secondary">
+            STATUS: <span class="text-success fw-bold">ONLINE [ALL SYSTEMS 100%]</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Credits -->
+      <div class="pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 small text-secondary font-mono">
+        <div>
+          &copy; 2026 <strong>VELOCE AUDIO LABS INC.</strong> ALL RIGHTS RESERVED.
+        </div>
+        <div class="d-flex gap-3">
+          <span>PRIVACY PROTOCOL</span>
+          <span>&bull;</span>
+          <span>TERMS OF TRANSMISSION</span>
+          <span>&bull;</span>
+          <span>SUSTAINABILITY INDEX</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Veloce Audio Engine JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
